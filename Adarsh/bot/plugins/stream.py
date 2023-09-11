@@ -2,7 +2,6 @@
 import os
 import asyncio
 from asyncio import TimeoutError
-from shortlink import get_shortlink
 from Adarsh.bot import StreamBot
 from Adarsh.utils.database import Database
 from Adarsh.utils.human_readable import humanbytes
