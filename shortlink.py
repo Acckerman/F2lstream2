@@ -2,7 +2,6 @@ import os
 import asyncio
 from os import getenv, environ
 from asyncio import TimeoutError
-from shortzy import Shortzy
 from Adarsh.vars import Var
 
 SHORTENER_API = str(getenv('URL_SHORTNER_WEBSITE_API', 'e0867ce24e2238645541bf7651be2217b4cd5dd1'))
