@@ -78,9 +78,10 @@ async def start(b, m):
         chat_id=m.chat.id,
         photo ="https://telegra.ph/file/ca10e459bc6f48a4ad0f7.jpg",
         caption =f'Hi {m.from_user.mention(style="md")}!,\nI am Telegram File to Link Generator Bot with Channel support.\nSend me any file and get a direct download link and streamable link.!',
-        reply_markup=buttonz)
-
-
+        reply_markup=InlineKeyboardMarkup(
+                    [
+                         InlineKeyboardButton("🧑‍💻 ADMIN", url=f"https://t.me/Contact_R2")
+                    ]
 @StreamBot.on_message((filters.command("help") | filters.regex('help📚')) & filters.private )
 async def help_handler(bot, message):
     if not await db.is_user_exist(message.from_user.id):
