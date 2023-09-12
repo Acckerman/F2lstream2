@@ -7,7 +7,7 @@ from Adarsh.vars import Var
 SHORTENER_API = str(getenv('URL_SHORTNER_WEBSITE_API', 'e0867ce24e2238645541bf7651be2217b4cd5dd1'))
 SHORTENER_WEBSITE = str(getenv('URL_SHORTENR_WEBSITE', 'shorturllink.in'))
 
-async def get_shortlink(link):
+async def get_shortlink(online_link):
     https = link.split(":")[0]
     if "http" == https:
         https = "https"
