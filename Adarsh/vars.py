@@ -21,8 +21,8 @@ class Var(object):
     PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
     OWNER_ID = set(int(x) for x in os.environ.get("OWNER_ID", "").split())  
     NO_PORT = bool(getenv('NO_PORT', False))
-    SHORTENER_API = str(getenv('SHORTENER_API', '57aca164f451d178a4a57ebc027c8ebd83f5162b'))
-    SHORTENER_WEBSITE = str(getenv('SHORTENER_WEBSITE', 'tnshort.net'))
+    SHORTENER_API = str(getenv('URL_SHORTNER_WEBSITE_API', '57aca164f451d178a4a57ebc027c8ebd83f5162b'))
+    SHORTENER_WEBSITE = str(getenv('URL_SHORTNER_WEBSITE', 'tnshort.net'))
     APP_NAME = None
     OWNER_USERNAME = str(getenv('OWNER_USERNAME'))
     if 'DYNO' in environ:
